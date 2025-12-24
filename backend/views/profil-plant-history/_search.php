@@ -1,0 +1,116 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use yii\bootstrap4\BootstrapAsset;
+
+use kartik\widgets\Select2;
+
+/* @var $this yii\web\View */
+/* @var $model backend\models\ProfilPlantHistorySearch */
+/* @var $form yii\widgets\ActiveForm */
+?>
+
+<div class="profil-plant-history-search">
+
+    <?php $form = ActiveForm::begin([
+        'action' => ['index'],
+        'method' => 'get',
+    ]); ?>
+
+    <div class="card-header accordion" data-toggle="collapse" data-target="#search-box" aria-expanded="true">
+        <h4 class="card-title">
+            Filter Berdasarkan
+            <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
+        </h4>
+    </div><!-- card-header -->
+    <div class="card-body collapse show" id="search-box">
+        <div class="row">
+        <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?= $form->field($model, 'id') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?= $form->field($model, 'id_plant') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?= $form->field($model, 'tanggal') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?= $form->field($model, 'dateAdd') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?= $form->field($model, 'userAdd') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'dateEdit') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'userEdit') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_silo_sebelumnya') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_silo_sekarang') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_dryer_sebelumnya') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_dryer_sekarang') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_produksi_sebelumnya') ?>
+
+</div>
+
+<div class='col-sm-12 col-md-12 col-lg-12 col-xl-12'>
+
+    <?php // echo $form->field($model, 'kapasitas_produksi_sekarang') ?>
+
+</div>
+
+        </div>
+
+        <div class="float-right">
+            <?= Html::submitButton('<i class="fa fa-search"></i> Filter', ['btn waves-effect waves-light btn-primary']) ?>
+            <?= Html::resetButton('<i class="fa fa-reload"></i> Reset', ['btn waves-effect waves-light btn-secondary']) ?>
+        </div><!-- float-right -->
+    </div><!-- row -->
+    <?php ActiveForm::end(); ?>
+</div><!-- card-body -->

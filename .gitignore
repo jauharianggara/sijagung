@@ -1,0 +1,131 @@
+# Yii2 Advanced Template .gitignore
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# Yii2 runtime directories
+/runtime/
+/backend/runtime/
+/console/runtime/
+/frontend/runtime/
+/common/runtime/
+
+# Yii2 cache and debug
+/runtime/cache/
+/runtime/debug/
+/backend/runtime/cache/
+/backend/runtime/debug/
+/console/runtime/cache/
+/console/runtime/debug/
+/frontend/runtime/cache/
+/frontend/runtime/debug/
+
+# Yii2 logs
+/runtime/logs/
+/backend/runtime/logs/
+/console/runtime/logs/
+/frontend/runtime/logs/
+*.log
+*.log.*
+error_log
+error.log
+
+# Yii2 assets
+/backend/web/assets/
+/frontend/web/assets/
+/backend/web/runtime/
+/frontend/web/runtime/
+
+# Yii2 tests
+/tests/_output/
+/backend/tests/_output/
+/frontend/tests/_output/
+/common/tests/_output/
+/tests/_support/_generated/
+/codeception.yml
+/backend/codeception.yml
+/frontend/codeception.yml
+/common/codeception.yml
+
+# Local configuration files
+*-local.php
+*-local.yaml
+*-local.yml
+/config/main-local.php
+/config/params-local.php
+/backend/config/main-local.php
+/backend/config/params-local.php
+/console/config/main-local.php
+/console/config/params-local.php
+/frontend/config/main-local.php
+/frontend/config/params-local.php
+/common/config/main-local.php
+/common/config/params-local.php
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# PHP
+*.php~
+*.php.bak
+
+# Node modules (if using npm/yarn)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+/dist/
+/build/
+
+# Coverage reports
+/coverage/
+*.coverage
+.nyc_output/
+
+# Misc
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+

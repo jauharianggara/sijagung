@@ -1,0 +1,55 @@
+[data-toggle="collapse"] .fa:before {   
+    content: "\f139";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a";
+}
+
+.accordion:not(.collapsed) .rotate-icon {
+    transform: rotate(180deg);
+}
+
+.accordion .accicon {
+    float: right;
+    font-size: 20px;  
+    width: 1.2em;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Material Design Icons';
+    font-style: normal;
+    line-height: 1;
+    padding-left: 5px;
+    margin-left: 10px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+a.asc:after {
+    content: "\F4BC";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\F4BD";
+}
+
+.sort-numerical a.asc:after {
+    content: "\F4BC";
+}
+
+.sort-numerical a.desc:after {
+    content: "\F4BD";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\F4BC";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\F4BD";
+}
